@@ -1,0 +1,3 @@
+﻿  bt4.cpp
+f:\thực tập cơ sở\bt4\bt4\bt4.cpp(51): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  bt4.vcxproj -> F:\thực tập cơ sở\bt4\Debug\bt4.exe

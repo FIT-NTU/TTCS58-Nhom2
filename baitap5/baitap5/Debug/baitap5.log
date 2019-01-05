@@ -1,0 +1,6 @@
+﻿  baitap5.cpp
+f:\thực tập cơ sở\baitap5\baitap5\baitap5.cpp(92): warning C4566: character represented by universal-character-name '\u1EF1' cannot be represented in the current code page (1252)
+f:\thực tập cơ sở\baitap5\baitap5\baitap5.cpp(92): warning C4566: character represented by universal-character-name '\u1EAD' cannot be represented in the current code page (1252)
+f:\thực tập cơ sở\baitap5\baitap5\baitap5.cpp(92): warning C4566: character represented by universal-character-name '\u01A1' cannot be represented in the current code page (1252)
+f:\thực tập cơ sở\baitap5\baitap5\baitap5.cpp(92): warning C4566: character represented by universal-character-name '\u1EDF' cannot be represented in the current code page (1252)
+  baitap5.vcxproj -> F:\thực tập cơ sở\baitap5\Debug\baitap5.exe
