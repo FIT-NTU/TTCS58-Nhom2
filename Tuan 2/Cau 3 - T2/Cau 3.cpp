@@ -7,8 +7,9 @@
 # include <math.h>
 # include <conio.h>
 # include <Windows.h>
+# include <sstream>
 using namespace std;
-fstream f("input3.txt");
+fstream f("input3-2.txt");
 struct O{
 	char gt[10];
 	int vt;
@@ -71,13 +72,17 @@ class Nhanvien{
 		void Nhap()
 		{
 			string s;
-			getline(f, s); Maso = s;
-			getline(f, s); Hoten = s;
-			getline(f, s); hesoluong = atoi(s.c_str());
-			getline(f, s); chucvu = s;
-			getline(f, s); hesochucvu = atoi(s.c_str());
-			getline(f, s); thang = atoi(s.c_str());
-			getline(f, s); nam = atoi(s.c_str());
+		    string line;		
+		    stringstream ss;	
+		    getline(f, line);
+		    ss.str(line);
+			getline(ss, s,'\t'); Maso = s;
+			getline(ss, s,'\t'); Hoten = s;
+			getline(ss, s,'\t'); hesoluong = atoi(s.c_str());
+			getline(ss, s,'\t'); chucvu = s;
+			getline(ss, s,'\t'); hesochucvu = atoi(s.c_str());
+			getline(ss, s,'\t'); thang = atoi(s.c_str());
+			getline(ss, s,'\t'); nam = atoi(s.c_str());
 			luongcb = 10000;
 		}
 		int Luong()

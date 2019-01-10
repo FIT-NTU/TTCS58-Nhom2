@@ -1,0 +1,15 @@
+18,12,2018,Sinh nhat
+1,1,2019,Nam moi
+1,1,2019,Sinh nhat Dia
+4,1,2019,Love Live! Sunshine!! The School idol Movie Over the Rainbow ra mat
+23,1,2019,CD dau tien cho movie cua Love Live! Sunshine!! phat hanh
+24,12,2018,Giang sinh
+24,12,2018,Bat dau thuc tap co so
+12,9,2018,Sinh nhat Kotori
+19,9,2018,Sinh nhat Riko
+21,9,2018,Sinh nhat Ruby
+1,8,2018,Sinh nhat Honoka
+3,8,2018,Sinh nhat Chika
+14,2,2019,Valentine
+31,10,2018,Halloween
+21,11,2018,CD TOKIMEKI Runners phat hanh

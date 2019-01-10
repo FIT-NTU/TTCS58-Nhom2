@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <fstream>
+#include <math.h>
 using namespace std;
 ifstream f("input4.txt");
 ofstream g("output4.txt");
@@ -24,36 +25,42 @@ int Demghe (int lop[100], int phong[100], int k, int n, int c[100])
 	for (int i = 0; i < n; i++)
 		if (c[i] == 1)
 		{
-			if (phong[i] >= lop[a])
+			if (phong[i] >= lop[a])				//Dem so ghe du ra tu cac phong hoc duoc su dung
 			{
-				sumghe += phong[i] - lop[a];
+				sumghe += phong[i] - lop[a];	//So ghe du nay bat buoc phai chuyen ra ngoai
 				ghedu += phong[i] - lop[a];
 			}				
 			a++;
 		}
 	a = 0;
-	for (int i = 0; i < n; i++)
+	for (int i = 0; i < n; i++)					//Dem so ghe trong tu cac phong hoc bi bo trong, vi cac ghe nay khong nhat thiet phai chuyen ra ngoai nen khong can cong vao bien sumghe
 		if (c[i] == 0)
 			ghetrong += phong[i];
 	for (int i = 0; i < n; i++)
 		if (c[i] == 1)
 		{
-			if (phong[i] < lop[a])
+			if (phong[i] < lop[a])				//Phong hoc bi thieu ghe
 			{
-				if (phong[i] + ghedu >= lop[a])
+				if (phong[i] + ghedu >= lop[a])	//So ghe du ra tu cac phong duoc su dung khac co the dap ung duoc
 				{
 					sumghe += lop[a] - phong[i];
 					ghedu -= lop[a] - phong[i];
 				}
-				else
+				else							//So ghe du ra tu cac phong duoc su dung khac co the dap ung duoc, nhung neu them so ghe trong tu cac phong bi bo trong thi co the dap ung duoc
 				{
-					ghetrong -= lop[a] - phong[i] - ghedu;
-					sumghe += ghedu + 2*(lop[a] - phong[i] - ghedu);
+					ghetrong -= lop[a] - phong[i] - ghedu;				
+					sumghe += ghedu + 2*(lop[a] - phong[i] - ghedu);		//Vi ghe trong tu cac phong bi bo trong ban dau van chua lay ra, nen gio khi muon chuyen qua cac phong hoc bi thieu ghe thi phai lay ra truoc roi moi bo vao, do do phai nhan 2
 					ghedu = 0;
 				}
 			}
 			a++;
 		}
+	/*for (int i = 0; i < n; i++)
+		if (c[i] == 1)
+		{
+			sumghe += abs(phong[i] - lop[a]);
+			a++;
+		}*/
 	return sumghe;		
 }
 //So lan chuyen ghe vao/ra it nhat

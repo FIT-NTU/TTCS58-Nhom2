@@ -1,0 +1,5 @@
+4
+NV1	Nguyen Huu Hoang	1	NV may tinh	2	5	2012
+NV2	Le Quang Dat	3	Truong phong	2	4	2016
+NV3	My Thi Thuan	5	Thu ky	1	5	2017
+NV4	Le Dieu Thien	0	NV ke toan	3	9	2018

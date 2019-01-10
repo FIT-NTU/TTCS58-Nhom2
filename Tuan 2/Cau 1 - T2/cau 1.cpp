@@ -1,16 +1,9 @@
 #include "tvcau1.h"
 void Nhap (int a[100][100], int &n, int &m)
 {
-	do
-	{
-		cout<<"Nhap so dong: ";
-		cin>>n;
-		cout<<"Nhap so cot: ";
-		cin>>m;
-		if (n != m)
-			cout<<endl<<"So dong phai bang so cot"<<endl<<endl;
-	}
-	while (n != m);
+	cout<<"Nhap so dong va cot: ";
+	cin>>n;
+	m = n;
 	srand(time(0));
 	for (int i = 0; i < n; i++)
 		for (int j = 0; j < m; j++)
@@ -28,8 +21,12 @@ void Xuat (int a[100][100], int n, int m)
 void Xoadong (int a[100][100], int &n, int m)
 {
 	int i;
-	cout<<"Nhap dong can xoa: ";
-	cin>>i;
+	do
+	{
+		cout<<"Nhap dong can xoa: ";
+		cin>>i;
+	}
+	while (i < 0 || i >= n);	
 	for (int k = i; k < n - 1; k++)
 		for (int j = 0; j < n; j++)
 			a[k][j] = a[k+1][j];
@@ -38,8 +35,12 @@ void Xoadong (int a[100][100], int &n, int m)
 void Xoacot (int a[100][100], int n, int &m)
 {
 	int j;
-	cout<<"Nhap cot can xoa: ";
-	cin>>j;
+	do
+	{
+		cout<<"Nhap cot can xoa: ";
+		cin>>j;
+	}
+	while (j < 0 || j >= m);	
 	for (int i = 0; i < n; i++)
 		for (int k = j; k < m - 1; k++)
 			a[i][k] = a[i][k+1];
@@ -111,8 +112,8 @@ void DSSoHoangHau (int a[100][100], int n, int m)
 		for (int j = 0; j < n; j++)
 			if (SoHoangHau(a,n,m,i,j) == 1)
 			{
-				g<<a[i][j]<<" (hang "<<i<<" / cot "<<j<<")\t";
+				f<<a[i][j]<<" (hang "<<i<<" / cot "<<j<<")\t";
 				count++;
 			}
-	g<<endl<<"So luong cac so hoang hau trong ma tran: "<<count<<endl;
+	f<<endl<<"So luong cac so hoang hau trong ma tran: "<<count<<endl;
 }

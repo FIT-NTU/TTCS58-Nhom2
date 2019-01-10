@@ -1,0 +1,7 @@
+Cac canh cua cay khung be nhat: 
+1-2: 1
+4-6: 2
+3-1: 2
+4-5: 3
+3-4: 3
+Tong trong so cua cay khung be nhat: 11

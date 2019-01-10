@@ -1,2 +1,2 @@
-97 (hang 2 / cot 4)	90 (hang 3 / cot 0)	
-So luong cac so hoang hau trong ma tran: 2
+96 (hang 2 / cot 2)	
+So luong cac so hoang hau trong ma tran: 1

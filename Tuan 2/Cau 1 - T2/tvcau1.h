@@ -4,7 +4,7 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
-ofstream g("output1.txt", ifstream::out);
+ofstream f("output1.txt", ifstream::out);
 void Nhap (int a[100][100], int &n, int &m);
 void Xuat (int a[100][100], int n, int m);
 void Xoadong (int a[100][100], int &n, int m);
